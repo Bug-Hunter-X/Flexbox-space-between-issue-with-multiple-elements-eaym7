@@ -1,0 +1,16 @@
+The following CSS code snippet exhibits a common yet easily overlooked error:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+```
+
+The intention is to distribute three `.item` elements evenly within the `.container`.  However, if three or more `item` elements are added to the container, they will overlap because `space-between` only works effectively with two elements.
