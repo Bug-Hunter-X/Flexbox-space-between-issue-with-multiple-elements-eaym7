@@ -1,0 +1,16 @@
+To correctly space multiple items, replace `space-between` with an approach that accounts for multiple elements.  Here's a corrected version using `space-around`:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+```
+
+`space-around` distributes space around each item, providing a more robust solution for multiple elements.
